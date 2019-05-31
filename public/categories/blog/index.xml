@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on </title>
+    <link>/categories/blog/</link>
+    <description>Recent content in blog on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 31 May 2019 01:11:42 +0200</lastBuildDate>
+    
+	<atom:link href="/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot Devtools with Intellij</title>
+      <link>/spring-boot-devtools-with-intellij/</link>
+      <pubDate>Fri, 31 May 2019 01:11:42 +0200</pubDate>
+      
+      <guid>/spring-boot-devtools-with-intellij/</guid>
+      <description>Auto reloading feature does not work out of the box in Intellij. Below are the changes required to make it work correctly.
+Spring Boot provide niche feature of hot reloading for a Spring Boot application.
+It recompile your java application as soon as you make a change. But most important aspect is that it only recompile only those files in which changes are made. Thus process take quite a short time compared to complete application build.</description>
+    </item>
+    
+  </channel>
+</rss>

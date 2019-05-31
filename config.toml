@@ -1,0 +1,62 @@
+baseurl         = ""
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+
+[params]
+  title       = ""
+  subtitle    = ""
+
+  cover       = "image/blog-cover.png"
+  description = "Bhanu Chaddha's blog"
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = "bhanu_chaddha"
+  fbName = "bhanu.chaddha"
+  githubName = "bhanuchaddha"
+  linkedinName = "bhanu-chaddha"
+  mediumName = "bhanuchaddha"
+
+  logo = ""
+  orgName = "EM"
+  orgWebsite = ""
+  orgDescription = ""
+
+  author = "EM"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Copenhagen, Denmark"
+  authorWebsite = "http://bhanuchaddha.in"
+  authorDescription = "Web Developer"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "caspertwo"
+
+[permalinks]
+  post = "/:slug/"
+
+[[menu.main]]
+  name = "Blog"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "Backend"
+  url = "/tags/backend/"
+  weight = 99
+
+[[menu.main]]
+  name = "Frontend"
+  url = "/tags/frontend/"
+  weight = 98 
+
+[[menu.main]]
+  name = "Life"
+  url = "/categories/life/"
+  weight = 5

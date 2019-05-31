@@ -19,7 +19,7 @@ tags : [
 categories : [
     "blog"
 ]
-draft: true
+draft: false
 ---
 
 Auto reloading feature does not work out of the box in Intellij. Below are the changes required to make it work correctly.

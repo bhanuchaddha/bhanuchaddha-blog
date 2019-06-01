@@ -4,3 +4,4 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/bhanuchaddha/bhanuchaddha.github.io.git
+	branch = master

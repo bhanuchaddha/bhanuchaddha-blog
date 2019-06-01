@@ -5,7 +5,6 @@ author: "Bhanu Chaddha"
 linktitle: Spring Boot Devtools with Intellij
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
-title: Spring Boot Devtools with Intellij
 weight: 2
 authorAvatar: image/logo.svg
 image: image/devtool.png

@@ -1,11 +1,10 @@
 ---
-title: "Using Redis Pub/Sub with Spring Boot"
+title: "Using Redis with Spring Boot"
 date: 2019-06-01T01:11:42+02:00
 author: "Bhanu Chaddha"
-linktitle: Using Redis Pub/Sub with Spring Boot
+linktitle: Using Redis with Spring Boot
 next:
 prev:
-title: Using Redis Pub/Sub with Spring Boot
 weight: 1
 authorAvatar: image/logo.svg
 image: image/1/redisSpringBoot.png

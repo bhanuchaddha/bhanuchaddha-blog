@@ -83,6 +83,9 @@ Hugo Static Site Generator v0.55.6/extended darwin/amd64 BuildDate: unknown
 
 ### **Create Project**
 
+If you want to check out the finished blog you can check it out [here](). I have created my own blog website using this setup
+you can check that at [https://bhanuchaddha.github.io/](https://bhanuchaddha.github.io/)
+
 Go to your command line and run below commands
 ```
 hugo new site demo-blog                                                                                                      
@@ -204,5 +207,76 @@ This will start a local server at `http://localhost:1313`. If you go this url us
 
 ![Initial Blog Website](/image/3/initialBlog.png)
 
-Wow!! your blog website is almost setup. The only thhing missing is your first blog. Which we would write in next section.
+Wow!! your blog website is almost setup. The only thing missing is your first blog. Which we would write in next section.
 
+Aditionaly You can modify configuration of you blog by changing the properties in `config.toml`. 
+
+* **baseurl** is used to specify your homepage. It is used as root of your blog.
+* **cover** can be used to configure cover image( similar to facebook) of your blog.
+* **authorAvatar** can be used to configure logo of auther. This logo is present below each article infront of Auther name. check [here](https://bhanuchaddha.github.io/using-redis-with-spring-boot/)
+* **menu** of the blog is decided by the cofiguration elements like `[[menu.main]] name = "Blog" url = "/" weight = 200` . Here we have configured one main menu and one catagory menu. This catagory menu poin to the `tutorial` catagory. Later in tutotial I would explain how to specify the catagory of the blog.
+
+Thats it for basic structure, lets create our first blog now.
+
+### **Write your blog**
+
+Go to `content` directory in your project and create new directory named `post`. Name of the directory is important here.
+Inside `post` directory crate new file named `first-blog.md`[1]. Here file extension stands for MarkDown. This is wildy popular way of format your text with minimal boiler plate. You can read further about it [here](https://www.markdownguide.org/)
+
+Copy the below content in the `first-blog.md` and save your changes.[2]
+
+```
+---
+title: "First Blog"
+date: 2019-06-06T22:11:42+02:00
+author: "<Your Name>"
+linktitle: First Blog
+weight: 1
+#authorAvatar: image/logo.svg
+image: image/first-blog.png
+tags : [
+    "firstBlog",
+    "tutorial",
+]
+categories : [
+    "tutorial"
+]
+draft: false
+---
+
+This is my first blog. I have created this blog withing one hour using free tools like
+
+* Git
+* MarkDown
+* Hugo
+
+This is really easy anyone can do it. You can follow [this]() guide for more details.
+```
+
+Now take any image and put that inside `image` folder inside `static` folder in your project. If `image` do not exist create one. Rename this image to `first-blog.jpg`. For this blog I am taking image from awesome free image resource [Pexels](https://www.pexels.com/).[3]
+
+Now go to `http://localhost:1313` you will see below
+
+![Finished Blog Website](/image/3/finishedBlog.png)
+
+Awesome!!! isnt it. You blog website is up and running. It only took some configuraiton and text files.
+
+If your server is not running execute below command  to start your server again.
+
+```
+hugo server
+```
+
+So what tha hell we have done above. Let me Explain
+
+* [1] To create new blog you just need to create new  .md file in post folder.
+* [2] Top of the blog content between `---` lines is called front matter. This is meta data of your blog and let you add author, tags and catagories to the blog.
+* [3] For each blog you need to have a cover image. This image is configured using `image` fron matter key.
+
+
+Now when your website is ready, Its time to publish this website.
+
+### **Set up Git repositories**
+
+If you are still reading this blog. I know it was a long post. :( . But I hope it was worth it. 
+Do reach me out if you have any questions. 

@@ -38,6 +38,11 @@ paginate        = 6
   #casper or caspertwo
   singleViewStyle = "casper"
 
+# required to open link in new tab
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
 [permalinks]
   post = "/:slug/"
 

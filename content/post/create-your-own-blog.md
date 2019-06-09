@@ -261,7 +261,7 @@ Now go to `http://localhost:1313` you will see below
 
 Awesome!!! isnt it. You blog website is up and running. It only took some configuraiton and text files.
 
-If your server is not running execute below command  to start your server again.
+If your server is not running execute below command to start your server again.
 
 ```
 hugo server
@@ -269,7 +269,7 @@ hugo server
 
 So what tha hell we have done above. Let me Explain
 
-* [1] To create new blog you just need to create new  .md file in post folder.
+* [1] To create new blog you just need to create new  `*.md` file in post folder.
 * [2] Top of the blog content between `---` lines is called front matter. This is meta data of your blog and let you add author, tags and catagories to the blog.
 * [3] For each blog you need to have a cover image. This image is configured using `image` fron matter key.
 
@@ -277,6 +277,20 @@ So what tha hell we have done above. Let me Explain
 Now when your website is ready, Its time to publish this website.
 
 ### **Set up Git repositories**
+
+We will create 2 GitHub repositories for our project
+
+1. Frist Repository for out project
+2. Secound repository to host our blog as Github project page
+
+We would also link both these repositories using Github submodules. But for the context of this blog you dont need to learn the Github submodules, if dont know it already. You can just follow the command provided in the blog. A good resource to learn about Github submodules is [here](https://github.blog/2016-02-01-working-with-submodules/).
+
+Create an repository like [https://github.com/bhanuchaddha/demo-blog](https://github.com/bhanuchaddha/demo-blog). And one more repository like [https://github.com/bhanuchaddha/demoblog-bhanuchaddha.github.io](https://github.com/bhanuchaddha/demoblog-bhanuchaddha.github.io). Second repository must have `github.io` at the end. So may be somthing like `<yourname>.github.io`. Github initialize the sttaic website for you if you sprcify `github.io` at the end of a repository name.
+
+Now go to the root of your project and execute below commands.
+
+
+
 
 If you are still reading this blog. I know it was a long post. :( . But I hope it was worth it. 
 Do reach me out if you have any questions. 

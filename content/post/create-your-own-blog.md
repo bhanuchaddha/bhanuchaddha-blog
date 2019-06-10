@@ -289,7 +289,60 @@ Create an repository like [https://github.com/bhanuchaddha/demo-blog](https://gi
 
 Now go to the root of your project and execute below commands.
 
+```
+# set submodule mapping
+git submodule add https://github.com/eueung/hugo-casper-two.git themes/casper-two
+git submodule add -b master https://github.com/bhanuchaddha/demoblog-bhanuchaddha.github.io public
 
+# commit any uncommited changes
+git commit -a -m "init"
+
+# set remote origin branch
+# git remote add origin https://github.com/bhanuchaddha/demo-blog.git
+git remote add origin <complete-repository-url>
+
+# push changes
+git push -u origin master
+```
+
+We have mapped `public` directory in root as submodule, which is mapped to `<yourname>.github.io` repository. But if you check the public directory it is empty now. 
+
+But if you run below command in the root directory. You will see `Hugo` generate the static content for us based upon our configuration and content.
+
+Before we run the below command ther is on lost thing we need to change in our `config.toml` file. Remember we kept `baseurl` as empty. Because now we now the url of our blog website repository, we can set the value. Set below for baseurl
+
+`"https://<Your-GitHub-User-Name>.github.io"`
+
+```
+hugo -t casper-two
+```
+
+```
+git commit -m "init blog content"
+```
+
+We have mapped `public` to `<yournYour-GitHub-User-Nameame>.github.io` repository because we want to push content of `public` directory only to `<Your-GitHub-User-Name>.github.io`. 
+
+
+### **Push your content**
+
+Now we have set up our repositories and created our static content in `public` directory . The only step remain is pushing our local content to GitHub. Run below commands
+
+```
+# go to public directory
+cd public
+
+# commit static content
+git commit -a -m "init blog content"
+
+# push your content
+git push
+```
+
+And thats it. Now if you go to [https://<Your-GitHub-User-Name>.github.io](https://<Your-GitHub-User-Name>.github.io
+) , you will see your website is up and ready now. You should see somthing like [https://bhanuchaddha.github.io/demoblog-bhanuchaddha.github.io/](https://bhanuchaddha.github.io/demoblog-bhanuchaddha.github.io/).
+
+You can match your content and configuration with below repositories. The only difference is the value of `baseurl` that is because I have set up this demo website as Project Site and  not the  User Site. I alrady have my official blog website as User Site. 
 
 
 If you are still reading this blog. I know it was a long post. :( . But I hope it was worth it. 

@@ -352,6 +352,14 @@ You can match your content and configuration with below repositories. The only d
 1. [Project Repository](https://github.com/bhanuchaddha/demo-blog)
 2. [Blog Repository](https://bhanuchaddha.github.io/demoblog-bhanuchaddha.github.io)
 
+### **From here**
+
+Now you can update your `first-blog.md` file or write new blog by creating more `*.md` files in `post` directory. Do remember to add front matter on the top of each blog file. After creating new blog files just repeat below steps to publish your new blog
+
+1. Generate static content using `hugo -t casper-two` command.
+2. Go to public directory and commit your changes 
+3. Go back to main directory and commit your changes. 
+
 
 If you are still reading this blog. I know it was a long post. :( . But I hope it was worth it. 
 Do reach me out if you have any questions. 
